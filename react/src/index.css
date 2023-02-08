@@ -1,0 +1,12 @@
+body {
+    background-color: #121212;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#root {
+    width: 80%;
+    max-width: 360px;
+}
