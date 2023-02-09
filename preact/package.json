@@ -9,7 +9,9 @@
         "@emotion/react": "^11.10.5",
         "@emotion/styled": "^11.10.5",
         "@mui/material": "^5.11.8",
-        "preact": "^10.12.0"
+        "preact": "^10.12.0",
+        "react": "npm:@preact/compat",
+        "react-dom": "npm:@preact/compat"
     },
     "devDependencies": {
         "@babel/cli": "^7.20.7",

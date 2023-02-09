@@ -236,24 +236,24 @@ module.exports = function() {
             // Automatically split vendor and commons
             // https://twitter.com/wSokra/status/969633336732905474
             // https://medium.com/webpack/webpack-4-code-splitting-chunk-graph-and-the-splitchunks-optimization-be739a861366
-            splitChunks: {
-                chunks: 'all',
-                name: false,
-                cacheGroups: {
-                    materialui: {
-                        test: /[\\/]node_modules[\\/][\\@]mui/,
-                        name: 'material-ui',
-                        priority: 100,
-                        enforce: true
-                    },
-                    emotion: {
-                        test: /[\\/]node_modules[\\/][\\@]emotion/,
-                        name: 'emotion',
-                        priority: 99,
-                        enforce: true
-                    }
-                }
-            },
+            // splitChunks: {
+            //     chunks: 'all',
+            //     name: false,
+            //     cacheGroups: {
+            //         materialui: {
+            //             test: /[\\/]node_modules[\\/][\\@]mui/,
+            //             name: 'material-ui',
+            //             priority: 100,
+            //             enforce: true
+            //         },
+            //         emotion: {
+            //             test: /[\\/]node_modules[\\/][\\@]emotion/,
+            //             name: 'emotion',
+            //             priority: 99,
+            //             enforce: true
+            //         }
+            //     }
+            // },
             // Keep the runtime chunk separated to enable long term caching
             // https://twitter.com/wSokra/status/969679223278505985
             // https://github.com/facebook/create-react-app/issues/5358
